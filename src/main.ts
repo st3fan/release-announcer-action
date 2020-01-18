@@ -17,8 +17,8 @@ const octokit = new github.GitHub(process.env.GITHUB_TOKEN);
 
 async function run(): Promise<void> {
   try {
-    core.info("Hello, this is release-announcer-action");
-    core.info(JSON.stringify(github.context.payload, undefined, 2));
+    console.log("Hello, this is release-announcer-action");
+    console.log(JSON.stringify(github.context.payload, undefined, 2));
   } catch (error) {
     core.setFailed(error.message);
   }
