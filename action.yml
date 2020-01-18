@@ -1,0 +1,6 @@
+name: "Release Announcer"
+description: "Announce a release on ..."
+author: "Stefan Arentz <stefan@arentz.ca>"
+runs:
+  using: "node12"
+  main: "dist/index.js"
